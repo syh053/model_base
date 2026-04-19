@@ -11,5 +11,5 @@ class ModelBase(DeclarativeBase):
                                      comment="id")
 
 class TimeMixin(DeclarativeBase):
-    created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), comment="created_at"),
+    created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), comment="created_at")
     edited_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), comment="edited_at")
